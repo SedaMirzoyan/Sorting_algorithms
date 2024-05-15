@@ -7,7 +7,7 @@ int partition(std::vector<int>& vec, int lower_bound, int upper_bound)
     int start = lower_bound;
     int end = upper_bound;
     int pivot = vec[lower_bound];
-    int loc;
+    int loc = 0;
 
     while (start < end)
     {
