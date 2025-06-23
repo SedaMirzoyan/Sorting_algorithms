@@ -15,7 +15,7 @@ def insert_in_heap(orig_arr, n, value):
             i = parent 
         #to avoid infinite loop
         else:
-            return arr
+            break
         
     return arr
         
@@ -41,7 +41,6 @@ def delete_from_heap(arr, n):
             largest = left_child
 
         if (largest != i):
-            print("in if")
             temp = arr[largest]
             arr[largest] = arr[i]
             arr[i] = temp
